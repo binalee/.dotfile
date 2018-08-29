@@ -1,0 +1,27 @@
+[color]
+    ui = auto
+[user]
+    name = Binalee
+    email = binalee10@gmail.com
+[core]
+    editor = vim
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[push]
+	default = simple
+[alias]
+    dif = diff
+    lg = log --color --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    wiff = diff --color-words
+    ciff = diff --cached
+    pullmaster = pull --rebase origin master
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[i18n]
+	commitEncoding = utf8
